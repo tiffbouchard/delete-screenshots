@@ -4,4 +4,4 @@ I take a lot of screenshots on my laptop that I think I am going to use later or
 
 This was mostly to practice automation with Python3 and I am not sure how good this code is, surely has some issues. However, if you would like to use it, you can fork it and pass your Mac username as an argument. 
 
-I hope to be able to add some kind of automation to rename and move the screenshots into particular folders, although I am unsure of how to approach this now, since the folders I want to move them to and names I would give them would be pretty personalized.
+I hope to be able to add some kind of automation to rename and move the screenshots into particular folders. Although I am unsure of how to approach this now since the folders I would want to move them to and names I would give them would be pretty personalized.
