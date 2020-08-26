@@ -1,7 +1,7 @@
 import os, time
 
-def find_screenshots():
-    os.chdir('/Users/tiffanybouchard/Desktop')
+def find_screenshots(user):
+    os.chdir("/Users/" + user + "/Desktop")
     filenames = [filename for filename in os.listdir() if filename.startswith("Screen Shot")]
     current_time = time.time()
     for f in filenames:
@@ -16,4 +16,4 @@ def find_screenshots():
         if (current_time - time_created) // (24 * 3600) >= 30:
             os.remove(f)
 
-find_screenshots()
+find_screenshots("tiffanybouchard")
