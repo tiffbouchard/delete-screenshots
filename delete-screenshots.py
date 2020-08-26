@@ -7,13 +7,12 @@ def find_screenshots():
     for f in filenames:
         time_created = os.path.getmtime(f)
         if (current_time - time_created) // (24 * 3600) < 7:
-            title = "Check your screenshots"
-            message = (f + " may need to be deleted")
+            title = 'Check your screenshots'
+            message = (f + ' may be deleted soon if you do not move it')
             command = f'''
             osascript -e 'display notification "{message}" with title "{title}"'
             '''
             os.system(command)
-            print("This screenshot is a week old: " + f)
         if (current_time - time_created) // (24 * 3600) >= 30:
             os.remove(f)
 
