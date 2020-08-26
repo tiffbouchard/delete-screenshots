@@ -6,7 +6,7 @@ def find_screenshots(user):
     current_time = time.time()
     for f in filenames:
         time_created = os.path.getmtime(f)
-        if (current_time - time_created) // (24 * 3600) < 7:
+        if (current_time - time_created) // (24 * 3600) == 7:
             title = 'Check your screenshots'
             message = (f + ' may be deleted soon if you do not move it')
             command = f'''
